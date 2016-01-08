@@ -1,0 +1,26 @@
+{
+  "name": "rx-history",
+  "version": "1.0.0",
+  "description": "History observable for RxJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ostera/rx-history.git"
+  },
+  "keywords": [
+    "reactive",
+    "history"
+  ],
+  "author": "Leandro Ostera <leandro@ostera.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ostera/rx-history/issues"
+  },
+  "homepage": "https://github.com/ostera/rx-history#readme",
+  "dependencies": {
+    "history": "^1.17.0"
+  }
+}
