@@ -1,9 +1,10 @@
-import { Observable } from 'rxjs';
+var Observable = require('rxjs').Observable;
 
-let fromHistory = (history) => {
-  let unlisten;
-  let listen = handler =>
+var fromHistory = function (history) {
+  var unlisten;
+  var listen = function (handler) {
     unlisten = history.listen(handler);
+  };
   return Observable.fromEventPattern(listen, unlisten);
 };
 
