@@ -5,7 +5,9 @@ var fromHistory = function (history) {
   var listen = function (handler) {
     unlisten = history.listen(handler);
   };
-  return Observable.fromEventPattern(listen, unlisten);
+  return Observable.fromEventPattern(listen, function () {
+    if(unlisten) unlisten();
+  });
 };
 
 Observable.fromHistory = fromHistory;

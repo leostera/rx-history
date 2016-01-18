@@ -1,6 +1,6 @@
 {
   "name": "rx-history",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "History observable for RxJS",
   "main": "index.js",
   "scripts": {
